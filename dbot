@@ -1,0 +1,51 @@
+#!/usr/bin/env php
+<?php
+/**
+ * dFramework
+ *
+ * The simplest PHP framework for beginners
+ * Copyright (c) 2019 - 2021, Dimtrov Lab's
+ * This content is released under the Mozilla Public License 2 (MPL-2.0)
+ *
+ * @package	    dFramework
+ * @author	    Dimitri Sitchet Tomkeu <dev.dst@gmail.com>
+ * @copyright	  Copyright (c) 2019 - 2021, Dimtrov Lab's. (https://dimtrov.hebfree.org)
+ * @copyright	  Copyright (c) 2019 - 2021, Dimitri Sitchet Tomkeu. (https://www.facebook.com/dimtrovich)
+ * @license	    https://opensource.org/licenses/MPL-2.0 MPL-2.0 License
+ * @link	      https://dimtrov.hebfree.org/works/dframework
+ * @version     3.3.0
+ */
+
+
+/*
+ * --------------------------------------------------------------------
+ * dFramework Command Line Interface
+ * --------------------------------------------------------------------
+ * The main entry point into the CLI system and allows you to run
+ * commands and perform maintenance on your application.
+ */
+
+require_once __DIR__.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'.bootstrap.php';
+
+
+$app = new dFramework\core\cli\Console('dFramework', dFramework\core\dFramework::VERSION);
+
+$app
+	->add(dFramework\core\cli\App::initialize())
+	->add(dFramework\core\cli\App::routes())
+    ->add(dFramework\core\cli\App::serve())
+    ->add(dFramework\core\cli\Database::dump())
+    ->add(dFramework\core\cli\Database::seed())
+    ->add(dFramework\core\cli\General::map())
+    ->add(dFramework\core\cli\General::test())
+    ->add(dFramework\core\cli\Maker::controller())
+    ->add(dFramework\core\cli\Maker::entity())
+    ->add(dFramework\core\cli\Migration::down())
+    ->add(dFramework\core\cli\Migration::make())
+    ->add(dFramework\core\cli\Migration::up())
+ ;/*
+
+    ->add(new dFramework\core\cli\Maker, 'make')
+    ->add(new dFramework\core\cli\Less);
+  */
+$app->handle($_SERVER['argv']);
