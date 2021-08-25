@@ -3,15 +3,13 @@
     "description": "The dFramework app starter",
     "type": "project",
     "license": "MPL-2.0",
-    "authors": [
-        {
-            "name": "Dimitri Sitchet Tomkeu",
-            "email": "devcode.dst@gmail.com",
-			"role": "Developer"
-        }
-    ],
+    "authors": [{
+        "name": "Dimitri Sitchet Tomkeu",
+        "email": "devcode.dst@gmail.com",
+        "role": "Developer"
+    }],
     "minimum-stability": "dev",
-	"require": {
-        "dimtrov/dframework": "3.3.3"
+    "require": {
+        "dimtrov/dframework": "3.3.4"
     }
 }

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44ee9ee2e538e3ae861e4bbec516b769",
+    "content-hash": "7b7ee2b4c97a557d3efafa27a2aa7332",
     "packages": [
         {
             "name": "dimtrov/dframework",
-            "version": "3.3.3",
+            "version": "3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dimtrov/dframework.git",
-                "reference": "ef43ae619cf1ea2bfa5b877559179b1e6b9decc6"
+                "reference": "da2e0eeae4cc2762ac0c2bd973f53a2047b7ea68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dimtrov/dframework/zipball/ef43ae619cf1ea2bfa5b877559179b1e6b9decc6",
-                "reference": "ef43ae619cf1ea2bfa5b877559179b1e6b9decc6",
+                "url": "https://api.github.com/repos/Dimtrov/dframework/zipball/da2e0eeae4cc2762ac0c2bd973f53a2047b7ea68",
+                "reference": "da2e0eeae4cc2762ac0c2bd973f53a2047b7ea68",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 }
             ],
             "description": "The simplest PHP framework for beginners",
-            "homepage": "http://dframework.com",
+            "homepage": "http://dframework.totalh.net",
             "keywords": [
                 "beginners",
                 "dframework",
@@ -64,11 +64,11 @@
                 "php"
             ],
             "support": {
-                "forum": "http://forum.dframework.com/",
+                "forum": "http://dframework.totalh.net/web/forum",
                 "issues": "https://github.com/Dimtrov/dframework/issues",
                 "source": "https://github.com/Dimtrov/dFramework"
             },
-            "time": "2021-07-19T10:51:45+00:00"
+            "time": "2021-08-25T14:30:13+00:00"
         }
     ],
     "packages-dev": [],
