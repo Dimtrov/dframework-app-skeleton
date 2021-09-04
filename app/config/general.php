@@ -37,13 +37,16 @@ $general['url_suffix'] = '';
 /*
 | Specifie l'environement de travail dans lequel vous etes
 |   - dev / prod
+|	- auto : utilisera prod ou dev selon que le site soit en ligne ou pas. (la fonction is_online() est utiliser pour determiner la valeur à choisir)
 */
-$general['environment']	= env('ENVIRONMENT', 'dev');
+$general['environment']	= env('ENVIRONMENT', 'auto');
 
 /*
 | Specifie si on doit afficher la debugbar ou pas
+| 	- True / False
+|	- auto : Le systeme affichera la debugbar uniquement dans un environnement de development
 */
-$general['show_debugbar'] = true;
+$general['show_debugbar'] = 'auto';
 
 /*
 | Specificie si on doit compresser le code de la vue avant de l'afficher ou pas
@@ -68,6 +71,40 @@ $general['use_absolute_link'] = true;
 |
 */
 $general['language']	= 'en';
+
+/**
+ * --------------------------------------------------------------------------
+ * Negotiate Locale
+ * --------------------------------------------------------------------------
+ *
+ * If true, the current Request object will automatically determine the
+ * language to use based on the value of the Accept-Language header.
+ *
+ * If false, no automatic detection will be performed.
+ */
+$general['negotiate_locale'] = true;
+
+/**
+ * --------------------------------------------------------------------------
+ * Supported Locales
+ * --------------------------------------------------------------------------
+ *
+ * If $negotiate_locale is true, this array lists the locales supported
+ * by the application in descending order of priority. If no match is
+ * found, the first locale will be used.
+ */
+$general['supported_locales'] = ['fr', 'en'];
+
+/**
+ * --------------------------------------------------------------------------
+ * Application Timezone
+ * --------------------------------------------------------------------------
+ *
+ * The default timezone that will be used in your application to display
+ * dates with the date helper, and can be retrieved through app_timezone()
+ */
+$general['timezone'] = 'Africa/Douala';
+
 
 /*
 |--------------------------------------------------------------------------

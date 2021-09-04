@@ -10,6 +10,6 @@
     }],
     "minimum-stability": "dev",
     "require": {
-        "dimtrov/dframework": "3.3.4"
+        "dimtrov/dframework": "v3.4.x-dev"
     }
 }
