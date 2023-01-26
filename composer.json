@@ -9,7 +9,8 @@
         "role": "Developer"
     }],
     "minimum-stability": "dev",
+	"prefer-stable": true,
     "require": {
-        "dimtrov/dframework": "v3.4.x-dev"
+        "dimtrov/dframework": "^3.4"
     }
 }

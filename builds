@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-define('LATEST_RELEASE', '3.3.6');
+define('LATEST_RELEASE', '3.4.0');
 define('GITHUB_URL', 'https://github.com/Dimtrov/dframework');
 
 /*
